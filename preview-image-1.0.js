@@ -30,9 +30,9 @@
 		}, options);
 		
 		// unbind any previous event listeners:
-		$opts.element.off('.previewImage');
+		opts.element.off('.previewImage');
 			
-		$opts.element.on('mouseover.previewImage', opts.eventSelector, function(e) {
+		opts.element.on('mouseover.previewImage', opts.eventSelector, function(e) {
 			var p = $('<p>').attr('id', opts.overlayId).css('position', 'absolute').css('display', 'none')
 				.css(opts.css).append($('<img>').attr('src', $(this).data(opts.dataKey)));
 			
@@ -41,11 +41,11 @@
 			p.css("top", (e.pageY - opts.xOffset) + "px").css("left", (e.pageX + opts.yOffset) + "px").fadeIn(opts.fadeIn);		
 		});
 		
-		$opts.element.on('mouseout.previewImage', opts.eventSelector, function() {
+		opts.element.on('mouseout.previewImage', opts.eventSelector, function() {
 			$('#' + opts.overlayId).remove();
 		});
 		
-		$opts.element.on('mousemove.previewImage', opts.eventSelector, function(e) {
+		opts.element.on('mousemove.previewImage', opts.eventSelector, function(e) {
 			$('#' + opts.overlayId).css("top", (e.pageY - opts.xOffset) + "px")
 				.css("left", (e.pageX + opts.yOffset) + "px");
 		});
