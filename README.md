@@ -19,7 +19,7 @@ then when a user hovers the mouse over the image, the larger view will be displa
 
 Another example:
 ``` html
-<a href="http://somesite.com/somepage.html" data-preview-image="preview-of-page.jpg" />
+<a href="http://somesite.com/somepage.html" data-preview-image="preview-of-page.jpg">link</a>
 ```
 
 If you don't like the defaults, you can optionally change any or all of them like:
