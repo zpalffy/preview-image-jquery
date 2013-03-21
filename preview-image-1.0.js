@@ -33,7 +33,6 @@
 		}, options);
 		
 		// unbind any previous event listeners:
-
 		opts.element.off(opts.namespace);
 			
 		opts.element.on('mouseover' + opts.namespace, opts.eventSelector, function(e) {
@@ -56,6 +55,7 @@
 		opts.element.on('mousemove' + opts.namespace, opts.eventSelector, function(e) {
 			$('#' + opts.overlayId).css("top", (e.pageY + opts.yOffset) + "px")
 				.css("left", (e.pageX + opts.xOffset) + "px");
+		});
 		
 		return this;
 	};
