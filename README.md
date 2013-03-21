@@ -3,6 +3,8 @@ preview-image-jquery
 
 jQuery plugin that adds an image preview mouseover to any element on the page with a data-preview-image attribute.
 
+License: MIT - http://opensource.org/licenses/MIT.
+
 Much of the code was taken from Alen Grakalic (http://cssglobe.com)  I took his already-working code, and modified it to:
   - use a 'data-' element rather than requiring a wrapping anchor tag
   - include the css for the overlay in script.
@@ -33,4 +35,9 @@ $.previewImage(
       'border': '5px solid black'
    }
 );
+```
+
+If you have your own css you'd like to use, or just don't want any inserted by the plugin, you can turn it off.  The css id for the overlay is 'preview-image-plugin-overlay' so you could write your own css to target that id if you wanted.
+``` javascript
+$.previewImage('css': false);
 ```
