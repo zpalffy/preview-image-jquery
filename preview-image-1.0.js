@@ -16,7 +16,7 @@
 			'xOffset': 20,    // the x offset from the cursor where the image will be overlayed.
 			'yOffset': -20,   // the y offset from the cursor where the image will be overlayed.			
 			'fadeIn': 'fast', // speed in ms to fade in, 'fast' and 'slow' also supported.
-			'css': {          // css to use, maybe also be set to false.
+			'css': {          // css to use, may also be set to false.
 				'padding': '8px',
 				'border': '1px solid gray',
 				'background-color': '#fff'
@@ -28,14 +28,12 @@
 			'eventSelector': '[data-preview-image]', // the selector for binding mouse events.
 			'dataKey': 'previewImage', // the key to the link data, should match the above value.
 			'overlayId': 'preview-image-plugin-overlay', // the id of the overlay that will be created.
-			'element': $(document), // the element to attach listeners to.
-			'namespace': '.previewImage' // namespace used for event listeners - local to this plugin.
 		}, options);
 		
 		// unbind any previous event listeners:
-		opts.element.off(opts.namespace);
+		$(document).off('.previewImage');
 			
-		opts.element.on('mouseover' + opts.namespace, opts.eventSelector, function(e) {
+		$(document).on('mouseover.previewImage', opts.eventSelector, function(e) {
 			var p = $('<p>').attr('id', opts.overlayId).css('position', 'absolute')
 				.css('display', 'none')
 				.append($('<img>').attr('src', $(this).data(opts.dataKey)));
@@ -48,11 +46,11 @@
 		});
 		
 
-		opts.element.on('mouseout' + opts.namespace, opts.eventSelector, function() {
+		$(document).on('mouseout.previewImage', opts.eventSelector, function() {
 			$('#' + opts.overlayId).remove();
 		});
 		
-		opts.element.on('mousemove' + opts.namespace, opts.eventSelector, function(e) {
+		$(document).on('mousemove.previewImage', opts.eventSelector, function(e) {
 			$('#' + opts.overlayId).css("top", (e.pageY + opts.yOffset) + "px")
 				.css("left", (e.pageX + opts.xOffset) + "px");
 		});
