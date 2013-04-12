@@ -31,7 +31,11 @@
 		}, options);
 		
 		// unbind any previous event listeners:
+<<<<<<< HEAD
 		$(document).off('.previewImage');
+=======
+		opts.element.off(opts.namespace);
+>>>>>>> whitespace
 			
 		$(document).on('mouseover.previewImage', opts.eventSelector, function(e) {
 			var p = $('<p>').attr('id', opts.overlayId).css('position', 'absolute')
