@@ -39,5 +39,5 @@ $.previewImage(
 
 If you have your own css you'd like to use, or just don't want any inserted by the plugin, you can turn it off.  The css id for the overlay is 'preview-image-plugin-overlay' so you could write your own css to target that id if you wanted.
 ``` javascript
-$.previewImage('css': false);
+$.previewImage({css: false});
 ```
