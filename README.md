@@ -19,9 +19,9 @@ Original: http://cssglobe.com/easiest-tooltip-and-image-preview-using-jquery/
 
 Examples
 --------
- - [With default options](http://zpalffy.github.io/example-preview-image-defaults.html), [source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-defaults.html)
- - [With custom options](http://zpalffy.github.io/example-preview-image-custom-options.html), [source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-custom-options.html)
- - [No CSS](http://zpalffy.github.io/example-preview-image-no-css.html), [source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-no-css.html)
+ - [With default options](http://zpalffy.github.io/example-preview-image-defaults.html) ([source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-defaults.html))
+ - [With custom options](http://zpalffy.github.io/example-preview-image-custom-options.html) ([source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-custom-options.html))
+ - [No CSS](http://zpalffy.github.io/example-preview-image-no-css.html) ([source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-no-css.html))
 
 Usage
 -----
