@@ -1,5 +1,6 @@
 /**
- * preview-image-1.0.js
+ * preview-image.js
+ * version 1.0
  * Eric Olson
  * https://github.com/zpalffy/preview-image-jquery
  * 
