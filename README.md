@@ -19,9 +19,9 @@ Original: http://cssglobe.com/easiest-tooltip-and-image-preview-using-jquery/
 
 Examples
 --------
- - [With default options](http://zpalffy.github.io/example-preview-image-defaults.html), source: https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-defaults.html
- - [With custom options](http://zpalffy.github.io/example-preview-image-custom-options.html), source: https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-custom-options.html
- - [No CSS](http://zpalffy.github.io/example-preview-image-no-css.html), source: https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-no-css.html
+ - [With default options](http://zpalffy.github.io/example-preview-image-defaults.html), [source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-defaults.html)
+ - [With custom options](http://zpalffy.github.io/example-preview-image-custom-options.html), [source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-custom-options.html)
+ - [No CSS](http://zpalffy.github.io/example-preview-image-no-css.html), [source](https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-no-css.html)
 
 Usage
 -----
@@ -52,8 +52,8 @@ $.previewImage(
 If you have your own css you'd like to use, or just don't want any inserted by the plugin, you can turn it off.  The css id for the overlay is 'preview-image-plugin-overlay' so you could write your own css to target that id if you wanted.
 ``` javascript
 $.previewImage({css: false});
+```
 
 History
 -------
 * **1.0** Initial commit
-```
