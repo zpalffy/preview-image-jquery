@@ -3,8 +3,12 @@ preview-image-jquery
 
 jQuery plugin that adds an image preview mouseover to any element on the page with a data-preview-image attribute.
 
-License: MIT - http://opensource.org/licenses/MIT.
+License
+-------
+MIT - http://opensource.org/licenses/MIT.
 
+Why?
+----
 Much of the code was taken from Alen Grakalic (http://cssglobe.com)  I took his already-working code, and modified it to:
   - use a 'data-' element rather than requiring a wrapping anchor tag
   - include the css for the overlay in script.
@@ -13,6 +17,14 @@ Much of the code was taken from Alen Grakalic (http://cssglobe.com)  I took his 
 
 Original: http://cssglobe.com/easiest-tooltip-and-image-preview-using-jquery/
 
+Examples
+--------
+ - (With default options)[http://zpalffy.github.io/example-preview-image-defaults.html], source: https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-defaults.html
+ - (With custom options)[http://zpalffy.github.io/example-preview-image-custom-options.html], source: https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-custom-options.html
+ - (No CSS)[http://zpalffy.github.io/example-preview-image-no-css.html], source: https://github.com/zpalffy/zpalffy.github.io/blob/master/example-preview-image-no-css.html
+
+Usage
+-----
 To use, simply include the script in the head of your page.  If you add an attribute to any element like:
 ``` html
 <img src="thumbnail-view.jpg" data-preview-image="large-view.jpg" />
@@ -40,4 +52,8 @@ $.previewImage(
 If you have your own css you'd like to use, or just don't want any inserted by the plugin, you can turn it off.  The css id for the overlay is 'preview-image-plugin-overlay' so you could write your own css to target that id if you wanted.
 ``` javascript
 $.previewImage({css: false});
+
+History
+-------
+* **1.0** Initial commit
 ```
