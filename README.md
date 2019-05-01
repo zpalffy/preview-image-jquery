@@ -38,7 +38,7 @@ Another example:
 
 If you don't like the defaults, you can optionally change any or all of them like:
 ``` javascript
-$.previewImage(
+$.previewImage({
    'xOffset': 10,  // x-offset from cursor
    'yOffset': 10,  // y-offset from cursor
    'fadeIn': 1000, // delay in ms. to display the preview
@@ -46,7 +46,7 @@ $.previewImage(
       'padding': '20px',
       'border': '5px solid black'
    }
-);
+});
 ```
 
 If you have your own css you'd like to use, or just don't want any inserted by the plugin, you can turn it off.  The css id for the overlay is 'preview-image-plugin-overlay' so you could write your own css to target that id if you wanted.
