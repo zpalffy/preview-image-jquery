@@ -43,11 +43,10 @@ $.previewImage({
 	   by passing an options object into this method.
 	*/
 	'xOffset': 10,    // the x offset from the cursor where the image will be overlayed.
-	'yOffset': 10,   // the y offset from the cursor where the image will be overlayed.
+	'yOffset': 10,    // the y offset from the cursor where the image will be overlayed.
 	'fadeIn': 'fast', // speed in ms to fade in, 'fast' and 'slow' also supported.
-	'maxHeight': 400,
-	// css to use, may also be set to false.
-	'css': {
+	'maxHeight': 400, // limit the height of the preview image in pixels
+	'css': {          // css to use, may also be set to false.
 		'padding': '8px',
 		'border': '1px solid #ccc',
 		'background-color': '#fff',
