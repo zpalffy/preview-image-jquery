@@ -39,27 +39,27 @@ Another example:
 If you don't like the defaults, you can optionally change any or all of them like:
 ``` javascript
 $.previewImage({
-			/* The following set of options are the ones that should most often be changed
-			   by passing an options object into this method.
-			*/
-			'xOffset': 10,    // the x offset from the cursor where the image will be overlayed.
-			'yOffset': 10,   // the y offset from the cursor where the image will be overlayed.
-			'fadeIn': 'fast', // speed in ms to fade in, 'fast' and 'slow' also supported.
-			'maxHeight': 400,
-			// css to use, may also be set to false.
-			'css': {
-				'padding': '8px',
-				'border': '1px solid #ccc',
-				'background-color': '#fff',
-				'z-index': '2000',
-			},
+	/* The following set of options are the ones that should most often be changed
+	   by passing an options object into this method.
+	*/
+	'xOffset': 10,    // the x offset from the cursor where the image will be overlayed.
+	'yOffset': 10,   // the y offset from the cursor where the image will be overlayed.
+	'fadeIn': 'fast', // speed in ms to fade in, 'fast' and 'slow' also supported.
+	'maxHeight': 400,
+	// css to use, may also be set to false.
+	'css': {
+		'padding': '8px',
+		'border': '1px solid #ccc',
+		'background-color': '#fff',
+		'z-index': '2000',
+	},
 
-			/* The following options should normally not be changed - they are here for
-			   cases where this plugin causes problems with other plugins/javascript.
-			*/
-			'eventSelector': '[data-preview-image]', // the selector for binding mouse events.
-			'dataKey': 'previewImage', // the key to the link data, should match the above value.
-			'overlayId': 'preview-image-plugin-overlay', // the id of the overlay that will be created.
+	/* The following options should normally not be changed - they are here for
+	   cases where this plugin causes problems with other plugins/javascript.
+	*/
+	'eventSelector': '[data-preview-image]', // the selector for binding mouse events.
+	'dataKey': 'previewImage', // the key to the link data, should match the above value.
+	'overlayId': 'preview-image-plugin-overlay', // the id of the overlay that will be created.
 });
 ```
 
