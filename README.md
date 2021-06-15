@@ -39,13 +39,26 @@ Another example:
 If you don't like the defaults, you can optionally change any or all of them like:
 ``` javascript
 $.previewImage({
-   'xOffset': 10,  // x-offset from cursor
-   'yOffset': 10,  // y-offset from cursor
-   'fadeIn': 1000, // delay in ms. to display the preview
-   'css': {        // the following css will be used when rendering the preview image.
-      'padding': '20px',
-      'border': '5px solid black'
-   }
+	/* The following set of options are the ones that should most often be changed
+	   by passing an options object into this method.
+	*/
+	'xOffset': 20,    // the x offset from the cursor where the image will be overlayed.
+	'yOffset': 20,    // the y offset from the cursor where the image will be overlayed.
+	'fadeIn': 'fast', // speed in ms to fade in, 'fast' and 'slow' also supported.
+	'maxHeight': 400, // limit the height of the preview image in pixels
+	'css': {          // css to use, may also be set to false.
+		'padding': '8px',
+		'border': '1px solid #ccc',
+		'background-color': '#fff',
+		'z-index': '2000',
+	},
+
+	/* The following options should normally not be changed - they are here for
+	   cases where this plugin causes problems with other plugins/javascript.
+	*/
+	'eventSelector': '[data-preview-image]', // the selector for binding mouse events.
+	'dataKey': 'previewImage', // the key to the link data, should match the above value.
+	'overlayId': 'preview-image-plugin-overlay', // the id of the overlay that will be created.
 });
 ```
 
@@ -57,3 +70,4 @@ $.previewImage({css: false});
 History
 -------
 * **1.0** Initial commit
+* **1.1** Preview won't display image out of window bounds, it's instead rendered to the left and/or top of the mouse cursor, respecting offsets.
